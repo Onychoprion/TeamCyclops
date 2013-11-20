@@ -8,14 +8,14 @@ function me_loadURL(url)
 /* executes the search */
 function me_searchBlog()
 {
-	var term = document.getElementById('myExtension-search-toolbar-box').value;
+	var term = document.getElementById('TeamCyclops-search-toolbar-box').value;
 	if(term.length > 0 && term != 'Search...') me_loadURL('http://yourdomain.tld/?search=' + encodeURIComponent(term));
 }
 
 /* listen for focus/blur on the search box */
 function me_focus(state)
 {
-	var box = document.getElementById('myExtension-search-toolbar-box');
+	var box = document.getElementById('TeamCyclops-search-toolbar-box');
 	if(state) { //focus
 		if(box.value == 'Search...') box.value = '';
 		box.select();

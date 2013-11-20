@@ -11,7 +11,7 @@
 					<id>{xxxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx}</id>
 					<minVersion>0.7</minVersion>
 					<maxVersion>1.5</maxVersion>
-					<updateLink>http://yourdomain.tld/myExtension/myExtension.xpi</updateLink>
+					<updateLink>http://yourdomain.tld/TeamCyclops/TeamCyclops.xpi</updateLink>
 				</r:Description>
 			</targetApplication>
 		</r:Description>
@@ -19,6 +19,6 @@
 		</r:Seq>
 		</updates>
 		<version>0.1</version>
-		<updateLink>http://yourdomain.tld/myExtension/myExtension.xpi</updateLink>
+		<updateLink>http://yourdomain.tld/TeamCyclops/TeamCyclops.xpi</updateLink>
 	</r:Description>
 </r:RDF>

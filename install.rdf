@@ -5,10 +5,10 @@
 
     <Description about="urn:mozilla:install-manifest">
         <em:id>johnlzeller@gmail.com</em:id>
-        <em:name>PassPRO</em:name>
+        <em:name>TeamCyclops</em:name>
         <em:version>0.1</em:version>
-        <em:optionsURL>chrome://myExtension/content/options.xul</em:optionsURL>
-		  <em:iconURL>chrome://myExtension/skin/logo.png</em:iconURL>
+        <em:optionsURL>chrome://TeamCyclops/content/options.xul</em:optionsURL>
+		  <em:iconURL>chrome://TeamCyclops/skin/logo.png</em:iconURL>
         <em:targetApplication>
             <Description>
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
