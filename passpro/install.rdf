@@ -3,14 +3,14 @@
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
 	<Description about="urn:mozilla:install-manifest">
-		<em:id>linktargetfinder@robertnyman.com</em:id>
-		<em:name>Link Target Finder</em:name>
-		<em:version>1.0</em:version>
+		<em:id>passpro@teamcyclops.com</em:id>
+		<em:name>PassPRO</em:name>
+		<em:version>0.1</em:version>
 		<em:type>2</em:type>
-		<em:creator>Robert Nyman</em:creator>
-		<em:description>Finds links that have a target attribute</em:description>
-		<em:homepageURL>http://www.robertnyman.com/</em:homepageURL>
-		<em:optionsURL>chrome://linktargetfinder/content/options.xul</em:optionsURL>
+		<em:creator>Jonathan Fessler, Elliot Gladden, Patrick Jarrold, Zhi Yan, John Zeller and Yi Zhao</em:creator>
+		<em:description>A browser plugin that allows the user to have a master password that controls randomized and secure passwords for a variety of accounts on websites throughout the internet. This localizes the process and securing of password information to the users computer, while keeping the login experience as seamless as possible for the user. No more annoying copy/pasting!</em:description>
+		<em:homepageURL>https://github.com/pjarrold/TeamCyclops</em:homepageURL>
+		<em:optionsURL>chrome://passpro/content/options.xul</em:optionsURL>
 
 		<em:targetApplication>
 			<Description>

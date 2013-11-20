@@ -1,12 +1,12 @@
-#link-target-finder-toolbar-button {
-	list-style-image: url("chrome://linktargetfinder/skin/toolbar-large.png");
+#pass-pro-toolbar-button {
+	list-style-image: url("chrome://passpro/skin/toolbar-large.png");
 }
 
-#link-target-finder-status-bar-icon {
+#pass-pro-status-bar-icon {
 	width: 83px;
 	margin: 0 5px;
 }
 
-.link-target-finder-selected {
+.pass-pro-selected {
 	outline: 2px solid red !important;
 }

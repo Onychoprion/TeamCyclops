@@ -1,8 +1,8 @@
-content     linktargetfinder    chrome/content/
-content     linktargetfinder    chrome/content/ contentaccessible=yes
-overlay chrome://browser/content/browser.xul chrome://linktargetfinder/content/browser.xul
+content     passpro    chrome/content/
+content     passpro    chrome/content/ contentaccessible=yes
+overlay chrome://browser/content/browser.xul chrome://passpro/content/browser.xul
 
-locale	linktargetfinder	en-US	locale/en-US/
+locale	passpro	en-US	locale/en-US/
 
-skin	linktargetfinder	classic/1.0	skin/
-style	chrome://global/content/customizeToolbar.xul	chrome://linktargetfinder/skin/skin.css
+skin	passpro	classic/1.0	skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://passpro/skin/skin.css
