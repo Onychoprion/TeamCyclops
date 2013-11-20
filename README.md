@@ -1,12 +1,11 @@
 # TeamCyclops
----
 
 ## Members
 * Jonathan Fessler
 * Elliot Gladden
-* Patrick Jarrold
+* [Patrick Jarrold](https://github.com/pjarrold)
 * Zhi Yan
-* John Zeller
+* [John Zeller](https://github.com/JohnLZeller)
 * Yi Zhao
 
 ## Contents
