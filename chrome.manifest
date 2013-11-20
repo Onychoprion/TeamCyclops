@@ -1,0 +1,8 @@
+content     passpro    chrome/content/
+content     passpro    chrome/content/ contentaccessible=yes
+overlay chrome://browser/content/browser.xul chrome://passpro/content/browser.xul
+
+locale	passpro	en-US	locale/en-US/
+
+skin	passpro	classic/1.0	skin/
+style	chrome://global/content/customizeToolbar.xul	chrome://passpro/skin/skin.css
