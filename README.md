@@ -13,4 +13,4 @@
 
 ## ProTips
 * Use this [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to format this readme. It has a lot of cool functionality that you can take advantage of if you're interested in doing so.
-* In order to install the plugin, you must first create a .xpi file using the following command from the root of this repo: zip -r PassPRO.xpi passpro/*
+* In order to install the plugin, you must first create a .xpi file using the following command from the passpro filder of this repo: zip -r ../PassPRO.xpi *
