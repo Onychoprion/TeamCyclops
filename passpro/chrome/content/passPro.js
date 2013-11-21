@@ -1,3 +1,5 @@
+Cu.import("resource://gre/modules/Services.jsm");
+
 var passPro = function () {
 	var prefManager = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
 	return {
@@ -8,37 +10,26 @@ var passPro = function () {
 					passPro.run();
 				}
 			}, false);
+
+			startUp();
 		},
 			
 		run : function () {
-			var head = content.document.getElementsByTagName("head")[0],
-				style = content.document.getElementById("pass-pro-style"),
-				allLinks = content.document.getElementsByTagName("a"),
-				foundLinks = 0;
-			
-			if (!style) {
-				style = content.document.createElement("link");
-				style.id = "pass-pro-style";
-				style.type = "text/css";
-				style.rel = "stylesheet";
-				style.href = "chrome://passpro/skin/skin.css";
-				head.appendChild(style);
-			}	
-						
-			for (var i=0, il=allLinks.length; i<il; i++) {
-				elm = allLinks[i];
-				if (elm.getAttribute("target")) {
-					elm.className += ((elm.className.length > 0)? " " : "") + "pass-pro-selected";
-					foundLinks++;
-				}
-			}
-			if (foundLinks === 0) {
-				alert("No links found with a target attribute");
-			}
-			else {
-				alert("Found " + foundLinks + " links with a target attribute");
-			}	
+			alert("You pressed me!");
 		}
 	};
 }();
+
+var startUp = function() {
+    let dialogSource = '\
+      <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>\
+      <dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" onload="document.title=content.document.title" buttons="accept" width="500" height="600">\
+        <iframe type="content-primary" flex="1" src="chrome://passpro/content/login.html"/>\
+      </dialog>';
+    Services.ww.openWindow(window,
+                           "data:application/vnd.mozilla.xul+xml," + encodeURIComponent(dialogSource),
+                           "_blank", "chrome,centerscreen,resizable,dialog=no", null);
+}();
+
+
 window.addEventListener("load", passPro.init, false);

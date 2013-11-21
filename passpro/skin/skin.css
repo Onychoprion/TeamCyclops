@@ -10,3 +10,13 @@
 .pass-pro-selected {
 	outline: 2px solid red !important;
 }
+
+h1 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+form {
+	text-align: center;
+	margin: 100 100 100 100;
+}
