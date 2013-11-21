@@ -1,11 +1,11 @@
-var passpro = function () {
+var passPro = function () {
 	var prefManager = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
 	return {
 		init : function () {
 			gBrowser.addEventListener("load", function () {
 				var autoRun = prefManager.getBoolPref("extensions.passpro.autorun");
 				if (autoRun) {
-					passpro.run();
+					passPro.run();
 				}
 			}, false);
 		},
@@ -41,4 +41,4 @@ var passpro = function () {
 		}
 	};
 }();
-window.addEventListener("load", passpro.init, false);
+window.addEventListener("load", passPro.init, false);
