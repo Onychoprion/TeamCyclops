@@ -16,6 +16,15 @@ var passPro = function () {
 			
 		run : function () {
 			alert("You pressed me!");
+		},
+		
+		unitTests : {
+			testAccountsList : function () {
+				// tests loading the account list and returning an array of account names
+				if (!passPro.loadAccounts()) return false;
+				var acctList = passPro.getAccountNames();
+				return Object.prototype.toString.call(acctList) === '[object Array]' && Array.isArray(acctList);
+			}
 		}
 	};
 }();
