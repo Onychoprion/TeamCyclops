@@ -10,6 +10,9 @@
  *
  * Author:		Elliott Gladden
  * Date:		2013-11-22
+ *
+ * Notes:		A variation of this test can be used for both the password
+ *				checker and the security question checker.
  ***************/
 
 #include <stdio.h>
