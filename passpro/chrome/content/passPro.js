@@ -23,22 +23,23 @@ var passPro = function () {
 				// tests loading the account list and returning an array of account names
 				if (!passPro.loadAccounts()) return false;
 				var acctList = passPro.getAccountNames();
-				return Object.prototype.toString.call(acctList) === '[object Array]' && Array.isArray(acctList);
+				return Object.prototype.toString.call(acctList) == '[object Array]' && Array.isArray(acctList);
 			}
-		}
-	};
+		},
+
+	}
 }();
 
-function startUp() {
-    let dialogSource = '\
-      <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>\
-      <dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" onload="document.title=content.document.title" buttons="accept" width="500" height="600">\
-        <iframe type="content-primary" flex="1" src="chrome://passpro/content/login.html"/>\
-      </dialog>';
+var startUp = function () {
+    let dialogSource = '<?xml-stylesheet href="chrome://global/skin/" type="text/css"?><dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" onload="document.title=content.document.title" buttons="accept" width="500" height="600"><iframe type="content-primary" flex="1" src="chrome://passpro/content/login.html"/></dialog>';
     Services.ww.openWindow(window,
                            "data:application/vnd.mozilla.xul+xml," + encodeURIComponent(dialogSource),
                            "_blank", "chrome,centerscreen,resizable,dialog=no", null);
 };
 
-
+var store = function()
+{
+    alert("Stored");
+};
+    
 window.addEventListener("load", passPro.init, false);

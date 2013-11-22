@@ -9,11 +9,11 @@
   <body>
     <h1>PassPRO!</h1>
     <p>Welcome to PassPRO! A browser plugin that allows the user to have a master password that controls randomized and secure passwords for a variety of accounts on websites throughout the internet. This localizes the process and securing of password information to the users computer, while keeping the login experience as seamless as possible for the user. No more annoying copy/pasting!</p>
-    <form>
+    <form name="login" action="passPro.js" method="post">
       Username: <input type="text" name="username"><br><br>
       Password: <input type="password" name="password"><br><br><br>
-      <input type="submit" value="Login">
-      <input type="submit" value="Create User Account!">
+      <input type="submit" value="Login" onsubmit="store()">
+      <input type="submit" value="Create User Account!" onsubmit="store()">
     </form> 
   </body>
 </html>
