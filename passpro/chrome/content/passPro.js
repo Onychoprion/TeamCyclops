@@ -15,7 +15,7 @@ var passPro = function () {
 		},
 			
 		run : function () {
-			alert("You pressed me!");
+            startUp();
 		},
 		
 		unitTests : {
@@ -29,7 +29,7 @@ var passPro = function () {
 	};
 }();
 
-var startUp = function() {
+function startUp() {
     let dialogSource = '\
       <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>\
       <dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" onload="document.title=content.document.title" buttons="accept" width="500" height="600">\
@@ -38,7 +38,7 @@ var startUp = function() {
     Services.ww.openWindow(window,
                            "data:application/vnd.mozilla.xul+xml," + encodeURIComponent(dialogSource),
                            "_blank", "chrome,centerscreen,resizable,dialog=no", null);
-}();
+};
 
 
 window.addEventListener("load", passPro.init, false);
